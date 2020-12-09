@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "threadsforslack-app",
+  "version": "1.0.0",
+  "description": "Threads for Slack app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,json,md}'",
+    "lint": "eslint --fix \"**/*.{js}\"",
+    "dev": "wrangler dev --env dev",
+    "build": "wrangler build",
+    "publish": "wrangler publish"
+  },
+  "author": "Tom Spencer <tom@studiozeffa.com>",
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.12.2",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  }
+}

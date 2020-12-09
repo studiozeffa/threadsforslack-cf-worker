@@ -1,0 +1,17 @@
+name = "app"
+type = "webpack"
+
+# Once you have a Cloudflare workers account, set your account ID here
+account_id = ""
+
+[env.dev]
+  workers_dev = true
+
+[env.prod]
+  # Set the zone_id and route to deploy to a custom domain.
+  # See the README for more information.
+  zone_id = ""
+  route = ""
+
+  # If you prefer to use the workers.dev domain in production, leave the two values above blank, and change the workers_dev key below to `true`.
+  workers_dev = false

@@ -8,9 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,json,md}'",
     "lint": "eslint --fix \"**/*.{js}\"",
-    "dev": "wrangler dev --env dev",
+    "auth": "wrangler login",
     "build": "wrangler build",
-    "publish": "wrangler publish"
+    "dev": "wrangler dev --env dev",
+    "publish": "wrangler publish --env prod"
   },
   "author": "Tom Spencer <tom@studiozeffa.com>",
   "devDependencies": {

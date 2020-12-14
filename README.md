@@ -19,7 +19,7 @@ To deploy the worker, you need a Cloudflare workers account - [sign up here](htt
 Once you have signed up, you need to authenticate your local machine with your account. Do this by running
 
 ```bash
-npm run auth
+npm run wrangler login
 ```
 
 This will save an API key to your `~/.wranger` directory, and will be used automatically when deploying the worker to Cloudflare.
